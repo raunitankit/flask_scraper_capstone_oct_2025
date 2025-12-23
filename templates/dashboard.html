@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraper Dashboard</title>
+    <link rel="stylesheet" href="{{url_for('static',filename ='style.css')}}">
+</head>
+<body>
+    <h2>Quotes Dashboard</h2>
+    <div>
+        {% for table in tables %}
+            {{table|safe}}
+        {% endfor %}
+    </div>
+</body>
+</html>
